@@ -1,0 +1,27 @@
+.button {
+    width: 160px;
+    height: 45px;
+    margin-left: 18px;
+    background-color: $main-color;
+    border-radius: 50px;
+    border: none;
+    color: #FFFFFF;
+    font-weight:  500;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    &:hover {
+        box-shadow: 3px 3px 20px $main-color;
+    }
+    &_promo {
+        display: block;
+        width: 230px;
+        height: 57px;
+        font-size: 15px;
+        margin: 39px auto 0 auto;
+    }
+    &_xs {
+        width: 139px;
+        height: 36px;
+    }
+}

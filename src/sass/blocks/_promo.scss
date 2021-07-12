@@ -1,0 +1,70 @@
+.promo {
+    width: 100%;
+    min-height: 680px;
+    background: url(../img/bg_menu.jpeg) center (center / cover) no-repeat;
+    padding: 132px 0 82px 0;
+    // transform: translateY(-122px);
+    &_tageline {
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        line-height: normal;
+        color: #ffffff;
+    }
+    &_delivery {
+        font-size: 64px;
+        font-weight: bold;
+        font-stretch: condensed;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: uppercase;
+        text-align: center;
+        color: $main-color;
+    }
+    &_transport {
+        font-size: 42px;
+        font-weight: normal;
+        text-align: center;
+        line-height: normal;
+        color: #ffffff;
+        margin-bottom: 38px;
+    }
+    &_divider{
+        display: flex;
+        justify-content: center;
+    }
+    &_divider-line {
+        width: 400px;
+        height: 1px;
+        background-color: #ffffff;
+    }
+    &_divider-point {
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background-color: #ffffff;
+        margin: 0 10px 37px 10px;
+        transform: translateY(-50%);
+    }
+    &_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &_icons {
+        width: 67px;
+        height: 63px;
+    }
+    &_descr {
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 19px;
+    }
+}

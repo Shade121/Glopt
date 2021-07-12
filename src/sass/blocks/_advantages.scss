@@ -1,0 +1,37 @@
+.advantages {
+    min-height: 400px;
+    padding: 58px 0 51px 0; 
+    
+    &_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px
+    }
+    &_icon {
+        width: 58px;
+        height: 50px;
+        margin-right: 17px;
+    }
+    &_descr {
+        width: 409px;
+    }
+    &_subtitle {
+        font-size: 16px;
+        font-weight: bold;
+        color: $main-color;
+    }
+    &_text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.57;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+    }
+    // .title {
+    //     transform: translateY(-74px);
+    // }
+    
+      
+}
