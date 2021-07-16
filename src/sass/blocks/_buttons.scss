@@ -13,7 +13,7 @@
     &:hover {
         box-shadow: 3px 3px 20px $main-color;
     }
-    &_promo {
+    &_xl {
         display: block;
         width: 230px;
         height: 57px;
@@ -23,5 +23,11 @@
     &_xs {
         width: 139px;
         height: 36px;
+    }
+    &_submit {
+        width: 100%;
+        height: 55px;
+        font-size: 16px;
+        margin-left: 0;
     }
 }

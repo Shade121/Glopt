@@ -1,14 +1,11 @@
 @media (max-width: 1200px) {
     .menu {
-        margin-top: 37px;
-        z-index: 6;
         &_link {
-            font-size: 13px;
+            font-size: 12px;
         }
        
     }
-    .subheader {
-        margin-top: 38px;
+    .header {
         &_phone {
             font-size: 14px;
         }
@@ -24,11 +21,20 @@
 }
 
 @media (max-width: 991px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        &_phone {
+            font-size: 16px;
+        }
+        &_block {
+            margin-top: 0;
+        }
+    }
     .menu {
-        margin-top: 27px;
-        
         &_link {
-            font-size: 15px;
+            font-size: 14px;
         }
         &_item {
             border-right: none;
@@ -36,22 +42,12 @@
         }
     }
     .hidden {
-        position: absolute;
-        width: 83%;
-        bottom: 5px;
-        z-index: 1;
+        align-items: flex-start;
+        width: 98%;
+        margin-bottom: 20px;
     }
-    .subheader {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin: 0;  
-        &_phone {
-            font-size: 16px;
-        }
-    }
+    
     .promo {
-        padding-top: 150px;
         &_delivery {
             font-size: 48px;
         }
@@ -65,10 +61,8 @@
 }
 
 @media (max-width: 767px) {
-    header {
-        .container {
-            flex-wrap: nowrap;
-        }
+    .header {
+        justify-content: space-between;
     }
     .menu {
         position: fixed;
@@ -98,7 +92,7 @@
         display: block;
         position: fixed;
         right: 15px;
-        top: 25%;
+        top: 10%;
         transform: translateY(-50%);
         width: 26px;
         height: 12px;
@@ -106,7 +100,7 @@
             display: block;
             height: 2px;
             width: 100%;
-            background-color: #fff;
+            background-color: $main-color;
             margin-bottom: 2px;
             transition: 0.5s all;
         }
@@ -126,12 +120,13 @@
         } 
     }
     .hidden {
-        bottom: 30px;
+        margin-top: 40px;
         width: 70%;
     }
     
     .promo {
         &_tageline {
+            margin-top: 15px;
             font-size: 20px;
         }
         &_delivery {
@@ -152,15 +147,17 @@
 }
 @media (max-width: 575px) {
     .logo {
-        margin-top: 21px;
+        margin-top: 22px;
         img {
-            max-width: 50%;
+            width: 60px;
+            height: auto;
         }
     }
-    .subheader {
+    .header {
         &_block {
             flex-direction: column;
             align-items: flex-end;
+            margin-right: 55px;
         }
         &_question {
             display: none;
@@ -177,7 +174,11 @@
         }
     }
     .hidden {
-        width: 74%
+        justify-content: flex-end;
+        width: 50%;
+        margin: 22px auto;
+        flex-grow: 3;
+
     }
     
     .promo {
@@ -216,6 +217,26 @@
         }
         &_descr {
             width: auto;
+        }
+    }
+    .feed-form {
+        width: 270px;
+        input {
+            height: 35px;
+        }
+        &_mt25 {
+            width: 250px;
+        }
+    }
+    .modal {
+        width: 300px;
+        min-height: 320px;
+        padding: 27px 22px 27px 22px;
+    }
+    .button {
+        
+        &_submit {
+            height: 40px;
         }
     }
 }

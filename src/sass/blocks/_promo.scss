@@ -2,8 +2,7 @@
     width: 100%;
     min-height: 680px;
     background: url(../img/bg_menu.jpeg) center (center / cover) no-repeat;
-    padding: 132px 0 82px 0;
-    // transform: translateY(-122px);
+    padding: 0 0 82px 0;
     &_tageline {
         font-size: 24px;
         font-weight: 300;
@@ -46,25 +45,26 @@
         margin: 0 10px 37px 10px;
         transform: translateY(-50%);
     }
-    &_item {
+    &-item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        &_icons {
+            width: 67px;
+            height: 63px;
+        }
+        &_descr {
+            font-size: 16px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            margin-top: 19px;
+        }
     }
-    &_icons {
-        width: 67px;
-        height: 63px;
-    }
-    &_descr {
-        font-size: 16px;
-        font-weight: 300;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.38;
-        letter-spacing: normal;
-        text-align: center;
-        color: #ffffff;
-        margin-top: 19px;
-    }
+    
 }

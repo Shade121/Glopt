@@ -16,6 +16,71 @@ $(document).ready(function() {
             })
         })
     }); 
+
+    // Modal
+
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('[data-modal=more]').on('click', function() {
+        $('.overlay, #more').fadeIn('slow');
+     });
+    $('.modal_close').on('click', function(){
+        $('.overlay, #consultation, #more, #thanks').fadeOut('slow');
+    });
+    
+    
+    function valideForms(form){
+    $(form).validate({
+        rules: {
+        name: {
+            required: true,
+            minlength: 2
+        },       
+        phone: {
+            required: true
+        },            
+        email: {
+            required: true,
+            email:true
+        }
+        },
+        messages: {
+        name: {
+            required: "Пожалуйста, введите своё имя",
+            minlength: jQuery.validator.format("Введите минимум {0} символа!")
+        },
+        phone: {
+            required: "Пожалуйста, введите свой номер телефона",
+        },
+        email: {
+            required: "Пожалуйста, введите свой email",
+            email: "Ваш email должен быть формата name@domain.com"
+        }
+        }
+    });
+    };
+    
+    valideForms('#consultation-form'),
+    valideForms('#consultation form'),   
+
+
+    $('input[name=phone]').mask("+38 (999) 999-99-99");
+
+    $('form').submit(function(e){
+        e.preventDefault();
+        $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+        }).done(function(){
+            $(this).find("input").val("");
+            $('#consultation, #more').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+            $('form').trigger('reset');
+        });
+        return false;
+    });
     
 })
 
