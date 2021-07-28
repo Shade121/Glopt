@@ -1,0 +1,75 @@
+.consultation {
+    padding: 28px 0 58px 0;
+    &_block {
+        border-left: 1px solid #888888;
+        border-right: 1px solid #888888;
+        height: auto;
+        input {
+            z-index: 3;
+        }
+    }
+    &_divider {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        &_left {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 501px;
+            height: 100%;
+            border-left: 1px solid #888888;
+            border-top: 1px solid #888888;
+        }
+        &_right {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 501px;
+            height: 100%;
+            border-right: 1px solid #888888;
+            border-top: 1px solid #888888;
+        }
+        &-round {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 5px 17px 5px;
+            width: 102px;
+            height: 102px;
+            border: solid 1px $main-color;
+            border-radius: 100%;
+        }
+        &-button {
+            margin-top: 20px;
+            &_left {
+                position: absolute;
+                left: 0;
+                bottom: 50%;
+                width: 462px;
+                height: 45px;
+                border-left: 1px solid #888888;
+                border-bottom: 1px solid #888888;
+            }
+            &_right {
+                position: absolute;
+                right: 0;
+                bottom: 50%;
+                width: 462px;
+                height: 45px;
+                border-right: 1px solid #888888;
+                border-bottom: 1px solid #888888;
+            }
+        }
+    }
+       
+}
+.error {
+    border: 1px solid $main-color;
+}
+label.error {
+    color: #4B4B4B;
+    border: none;
+    text-align: center;
+    margin-bottom: 15px;
+}

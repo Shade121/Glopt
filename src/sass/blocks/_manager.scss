@@ -1,0 +1,45 @@
+.manager {
+    background: url(../img/bg_manager.jpg) center (center / cover) no-repeat;
+    width: 100%;
+    min-height: 342px;
+    padding: 58px 0 75px 0;
+    &_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &_round{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 102px;
+        height: 102px;
+        border: solid 1px #ffffff;
+        border-radius: 100%;
+    }
+    &_descr {
+        max-width: 984px;
+    }
+    &_subtitle {
+        font-size: 26px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.88;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    &_text {
+        margin-top: 22px;
+        font-size: 19px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+}

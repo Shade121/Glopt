@@ -18,6 +18,29 @@
             font-size: 32px;
         }
     }
+    .price {
+        &_block {
+            justify-content: center;
+        }
+    }
+    .consultation {
+        &_divider {
+            &_left {
+                width: 410px;
+            }
+            &_right {
+                width: 410px;
+            }
+            &-button {
+                &_left {
+                    width: 372px;
+                }
+                &_right {
+                    width: 372px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -58,11 +81,32 @@
             font-size: 13px;
         }
     }
+    .consultation {
+        &_divider {
+            &_left {
+                width: 292px;
+            }
+            &_right {
+                width: 292px;
+            }
+            &-button {
+                &_left {
+                    width: 252px;
+                }
+                &_right {
+                    width: 252px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
     .header {
         justify-content: space-between;
+        &_block {
+            justify-content: flex-start;
+        }
     }
     .menu {
         position: fixed;
@@ -76,6 +120,7 @@
         padding: 20px 15px;
         background-color: rgba(0, 0, 0, .8);
         transition: 0.6s all;
+        z-index: 10;
         &_active {
             left: 0;
         }            
@@ -96,6 +141,7 @@
         transform: translateY(-50%);
         width: 26px;
         height: 12px;
+        z-index: 10;
         span {
             display: block;
             height: 2px;
@@ -123,7 +169,6 @@
         margin-top: 40px;
         width: 70%;
     }
-    
     .promo {
         &_tageline {
             margin-top: 15px;
@@ -144,6 +189,40 @@
             font-size: 16px;
         }
     }
+    .price {
+        &_block {
+            justify-content: center;
+        }
+    }
+    .consultation {
+        z-index: 0;
+        &_divider {
+            &_left {
+                width: 201px;
+            }
+            &_right {
+                width: 201px;
+            }
+            &-button {
+                &_left {
+                    width: 163px;
+                }
+                &_right {
+                    width: 163px;
+                }
+            }
+        }
+        .feed-form {
+            &_row {
+                flex-direction: column;
+                align-items: center;
+                input {
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+    
 }
 @media (max-width: 575px) {
     .logo {
@@ -178,7 +257,6 @@
         width: 50%;
         margin: 22px auto;
         flex-grow: 3;
-
     }
     
     .promo {
@@ -227,6 +305,16 @@
         &_mt25 {
             width: 250px;
         }
+        &_row {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            input {
+                width: 268px;
+                height: 45px;
+                margin-top: 6px;
+            }
+        }
     }
     .modal {
         width: 300px;
@@ -234,9 +322,26 @@
         padding: 27px 22px 27px 22px;
     }
     .button {
-        
         &_submit {
             height: 40px;
+        }
+    }
+    .consultation {
+        &_divider {
+            &_left {
+                width: 92px;
+            }
+            &_right {
+                width: 92px;
+            }
+            &-button {
+                &_left {
+                    width: 53px;
+                }
+                &_right {
+                    width: 53px;
+                }
+            }
         }
     }
 }
