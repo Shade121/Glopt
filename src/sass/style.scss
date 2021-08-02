@@ -3,6 +3,7 @@
 @import 'libs/bootstrap-grid.min';
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/animate';
+@import 'libs/slick';
 
 * {
     font-family: Roboto, sans-serif;
@@ -25,4 +26,6 @@
 @import 'blocks/manager';
 @import 'blocks/schema';
 @import 'blocks/carousel';
+@import 'blocks/dots';
+@import 'blocks/pageup';
 @import 'base/media';

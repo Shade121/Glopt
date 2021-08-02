@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <div class="row">
                 <header class="header">
@@ -205,8 +205,8 @@
             <div class="divider"></div>
             <div class="row">
                 <div class="col md-10">
-                    <div class="work_subtitle">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза и ваших требований по срокам и бюджету.
-                    </div>
+                    <h2 class="subtitle">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза <br> и ваших требований по срокам и бюджету.
+                    </h2>
                 </div>
             </div>
             <div class="row">
@@ -271,8 +271,8 @@
            <div class="divider"></div>
            <div class="row">
                <div class="col md-8">
-                <div class="price_subtitle">Перевозки грузов на дальние расстояния без каких-либо ограничений. Любой груз доставим вовремя. </div>
-               </div>
+                    <h2 class="subtitle">Перевозки грузов на дальние расстояния без каких-либо ограничений. <br> Любой груз доставим вовремя. </h2>
+            </div>
            </div>
            <div class="row">
                 <div class="col md-3">
@@ -290,7 +290,7 @@
                             </div>
                             <div class="price-item_text">Морские перевозки грузов из Китая в Россию за 35 дней с прохождением таможни 
                             </div>
-                            <button data-modal="more" class="button price-item_link">Подробнее</button>
+                            <button data-modal="more_ship" class="button price-item_link">Подробнее</button>
                         </div>
                     </div>
                 </div>
@@ -310,7 +310,7 @@
                             <div class="price-item_text">ЖД перевозки грузов из Китая в Россию от 2 недель 
                                 с прохождением таможни 
                             </div>
-                            <button data-modal="more" class="button price-item_link">Подробнее</button>
+                            <button data-modal="more_train" class="button price-item_link">Подробнее</button>
                         </div>
                     </div>
                 </div>
@@ -330,7 +330,7 @@
                             <div class="price-item_text">Автоперевозки грузов из Китая в Россию от 2 недель 
                                 с прохождением таможни
                             </div>
-                            <button data-modal="more" class="button price-item_link">Подробнее</button>
+                            <button data-modal="more_truck" class="button price-item_link">Подробнее</button>
                         </div>
                     </div>
                 </div>
@@ -350,7 +350,7 @@
                             <div class="price-item_text">Авиаперевозки грузов из Китая в Россию до 2 недель 
                                 с прохождением таможни
                             </div>
-                            <button data-modal="more" class="button price-item_link">Подробнее</button>
+                            <button data-modal="more_plane" class="button price-item_link">Подробнее</button>
                         </div>
                     </div>
                 </div>
@@ -499,52 +499,68 @@
         </div>
     </section>
     <div class="carousel">
-        <div class="container">
-            <h2 class="title">отзывы наших клиентов</h2>
-            <div class="divider"></div>
-            <div class="card-carousel">
-                <div class="my-card">
-                    <div class="carousel_block">
-                        <div class="carousel_icon">
-                            <img src="img/Dmitry.jpeg" alt="Dmitry">
-                        </div>
-                        <div class="carousel_descr">
-                            <div class="carousel_subtitle">Дмитрий Иванов</div>
-                            <div class="carousel_text">
-                                Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользоваться услугами даной компании  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="my-card">
-                    <div class="carousel_block">
-                        <div class="carousel_icon">
-                            <img src="img/olga.jpeg" alt="Olga">
-                        </div>
-                        <div class="carousel_descr">
-                            <div class="carousel_subtitle">Анисимова Ольга</div>
-                            <div class="carousel_text">
-                                Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользоваться услугами даной компании  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="my-card">
-                    <div class="carousel_block">
-                        <div class="carousel_icon">
-                            <img src="img/Sergy.jpeg" alt="Sergey">
-                        </div>
-                        <div class="carousel_descr">
-                            <div class="carousel_subtitle">Сергей Валиев</div>
-                            <div class="carousel_text">
-                                Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользоваться услугами даной компании  
-                            </div>
-                        </div>
-                    </div>
+        <h2 class="title">отзывы наших клиентов</h2>
+        <div class="divider"></div>
+        <h2 class="subtitle">Мы всегда стараемся помочь клиентам, чтобы они обращались к нам снова</h2>
+        <div class="slider">
+            <div class="item">
+                <div class="item-inner">
+                    <img src="img/Dmitry.jpeg" alt="Dmitry">
+                    <h4>Дмитрий Иванов</h4>
+                    <p>
+                        Хочу рассказать о компании Global Opt. Самое главное, что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами даной компании  
+                    </p>
                 </div>
             </div>
+            <div class="item">
+                <div class="item-inner">
+                    <img src="img/olga.jpeg" alt="Olga">
+                    <h4>Анисимова Ольга</h4>
+                    <p>
+                        Хочу рассказать о компании Global Opt. Самое главное, что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами даной компании  
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-inner">
+                    <img src="img/Sergy.jpeg" alt="Sergey">
+                    <h4>Сергей Валиев</h4>
+                    <p>
+                        Хочу рассказать о компании Global Opt. Самое главное, что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами даной компании  
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-inner">
+                    <img src="img/Dmitry.jpeg" alt="Dmitry">
+                    <h4>Дмитрий Иванов</h4>
+                    <p>
+                        Хочу рассказать о компании Global Opt. Самое главное, что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами даной компании  
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-inner">
+                    <img src="img/olga.jpeg" alt="Olga">
+                    <h4>Анисимова Ольга</h4>
+                    <p>
+                        Хочу рассказать о компании Global Opt. Самое главное, что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами даной компании 
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-inner">
+                    <img src="img/Sergy.jpeg" alt="Sergey">
+                    <h4>Сергей Валиев</h4>
+                    <p>
+                        Хочу рассказать о компании Global Opt. Самое главное, что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, до больших партий детской одежды. Буду продолжать пользоваться услугами даной компании 
+                    </p>
+                </div>
+            </div>
+            
         </div>
     </div>
+    
 
     <div class="overlay">
         <div class="modal" id="consultation">
@@ -559,10 +575,37 @@
             <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
         </div>
 
-        <div class="modal modal_price" id="more">
+        <div class="modal modal_price" id="more_ship">
             <div class="modal_close">&times;</div>
             <div class="modal_more">
+                Ship Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+            </div>
+        </div>
+        <div class="modal modal_price" id="more_train">
+            <div class="modal_close">&times;</div>
+            <div class="modal_more">
+                Train Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+            </div>
+        </div>
+        <div class="modal modal_price" id="more_truck">
+            <div class="modal_close">&times;</div>
+            <div class="modal_more">
+                Truck Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+            </div>
+        </div>
+        <div class="modal modal_price" id="more_plane">
+            <div class="modal_close">&times;</div>
+            <div class="modal_more">
+                Plane Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
@@ -577,15 +620,14 @@
         </div>
     </div>
 
-       
+    <a href="#up" class="pageup">
+        <img src="icons/chevron-circle-up-solid.svg" alt="UP"> 
+    </a>   
 
     
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
-        crossorigin="anonymous">
-        </script>
+        <script src="js/slick.min.js"></script> 
         <script src="js/jquery.validate.min.js"></script> 
         <script src="js/jquery.maskedinput.min.js"></script>
         <script src="js/wow.min.js"></script>

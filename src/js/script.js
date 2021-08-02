@@ -22,8 +22,17 @@ $(document).ready(function() {
     $('[data-modal=consultation]').on('click', function() {
         $('.overlay, #consultation').fadeIn('slow');
     });
-    $('[data-modal=more]').on('click', function() {
-        $('.overlay, #more').fadeIn('slow');
+    $('[data-modal=more_ship]').on('click', function() {
+        $('.overlay, #more_ship').fadeIn('slow');
+     });
+     $('[data-modal=more_truck]').on('click', function() {
+        $('.overlay, #more_truck').fadeIn('slow');
+     });
+     $('[data-modal=more_train]').on('click', function() {
+        $('.overlay, #more_train').fadeIn('slow');
+     });
+     $('[data-modal=more_plane]').on('click', function() {
+        $('.overlay, #more_plane').fadeIn('slow');
      });
     $('.modal_close').on('click', function(){
         $('.overlay, #consultation, #more, #thanks').fadeOut('slow');
@@ -82,48 +91,74 @@ $(document).ready(function() {
         return false;
     });
 
-    $num = $('.my-card').length;
-    $even = $num / 2;
-    $odd = ($num + 1) / 2;
+    $(".slider").slick({
+        centerMode: true,
+        slidesToShow: 3,
+        initialSlide: 1,
+        variableWidth: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/prev.png"></img></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/next.png"></button>',
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                // slidesToShow: 1,
+                // variableWidth: false,
+                arrows: false,
+                dots: true,
+                dotsClass: "dots-castom"
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                variableWidth: false,
+                arrows: false,
+                dots: true,
+                dotsClass: "dots-castom"
+              }
+            },
+            {
+              breakpoint: 575,
+              settings: {
+                slidesToShow: 1,
+                variableWidth: false,
+                arrows: false,
+                dots: true,
+                dotsClass: "dots-castom"
+              }
+            },
+            {
+              breakpoint: 320,
+              settings: {
+                slidesToShow: 1,
+                variableWidth: false,
+                arrows: false,
+                dots: true,
+                dotsClass: "dots-castom"
+              }
+            }
+          ]
+    });
+    
+	// Smooth scroll and pageup
 
-    if ($num % 2 == 0) {
-        $('.my-card:nth-child(' + $even + ')').addClass('active');
-        $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
-        $('.my-card:nth-child(' + $even + ')').next().addClass('next');
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 1600){
+            $('.pageup').fadeIn();
         } else {
-        $('.my-card:nth-child(' + $odd + ')').addClass('active');
-        $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
-        $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+            $('.pageup').fadeOut();
         }
-
-    $('.my-card').click(function() {
-        $slide = $('.active').width();
-    console.log($('.active').position().left);
-    
-    if ($(this).hasClass('next')) {
-        $('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
-    } else if ($(this).hasClass('prev')) {
-        $('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
-    }
-    
-        $(this).removeClass('prev next');
-        $(this).siblings().removeClass('prev active next');
-        
-        $(this).addClass('active');
-        $(this).prev().addClass('prev');
-        $(this).next().addClass('next');
-        
     });
-
-
-    // Keyboard nav
-    $('html body').keydown(function(e) {
-    if (e.keyCode == 37) { // left
-        $('.active').prev().trigger('click');
-    }
-    else if (e.keyCode == 39) { // right
-        $('.active').next().trigger('click');
-    }
+  
+    $("a[href=#up]").click(function(){
+      const _href = $(this).attr("href");
+      $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+      return false;
     });
+  
+    new WOW().init();
+    
 })
 

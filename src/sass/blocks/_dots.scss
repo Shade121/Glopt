@@ -1,0 +1,72 @@
+.dots-castom {
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+        button {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: transparent;
+            &:hover {
+                outline: none;
+            }
+            &:focus {
+                outline: none;
+            }
+            &:before {
+                font-family: 'slick';
+                font-size: 50px;
+                line-height: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                content: '•';
+                text-align: center;
+                opacity: .25;
+                color: black;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                
+                /* Обводка маркеров */
+                
+                /* WebKit (Safari/Chrome) Only */
+                -webkit-text-stroke: 1px red;
+                /* If we weren't using text-shadow, we'd set a fallback color
+                    and use this to set color instead
+                    -webkit-text-fill-color: white; */
+                text-shadow: 1px 1px 0 #f00, /* Simulated effect for Firefox and Opera
+                    and nice enhancement for WebKit */
+                -1px -1px 0 #f00, 1px -1px 0 #f00, -1px 1px 0 #f00, 1px 1px 0 #f00;
+                /* / Обводка маркеров */
+            }
+        }
+    }
+    .slick-active {
+        button {
+            background: #252525;
+            opacity: 1;
+            border: 2px solid $main-color;
+        }
+    }
+}

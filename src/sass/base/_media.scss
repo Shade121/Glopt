@@ -184,10 +184,8 @@
             font-size: 13px;
         }
     }
-    .work {
-        &_subtitle {
-            font-size: 16px;
-        }
+    .subtitle {
+        font-size: 16px;
     }
     .price {
         &_block {
@@ -222,6 +220,28 @@
             }
         }
     }
+    .slick {
+        &-slide {
+            opacity: 0;
+            .item {
+                &-inner {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+            img {
+                margin: 0 auto;
+                max-width: 90px;
+                border-radius: 50%; 
+                margin-top: 31px;
+            }
+        }
+        &-current{
+            opacity: 1;
+        }
+    }
+    
     
 }
 @media (max-width: 575px) {
@@ -281,12 +301,12 @@
         }
     }
     .title {
-        font-size: 22px;
+        font-size: 21px;
+    }
+    .subtitle {
+        font-size: 14px;
     }
     .work {
-        &_subtitle {
-            font-size: 14px;
-        }
         &_image{
             img {
                 width: 274px;
@@ -328,21 +348,27 @@
     }
     .consultation {
         &_divider {
+            &-round {
+                width: 90px;
+                height: 90px;
+            }
             &_left {
-                width: 92px;
+                width: 85px;
             }
             &_right {
-                width: 92px;
+                width: 85px;
             }
             &-button {
                 &_left {
-                    width: 53px;
+                    width: 46px;
                 }
                 &_right {
-                    width: 53px;
+                    width: 46px;
                 }
             }
         }
+        
     }
+    
 }
     
