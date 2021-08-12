@@ -22,24 +22,36 @@ $(document).ready(function() {
     $('[data-modal=consultation]').on('click', function() {
         $('.overlay, #consultation').fadeIn('slow');
     });
-    $('[data-modal=more_ship]').on('click', function() {
-        $('.overlay, #more_ship').fadeIn('slow');
-     });
-     $('[data-modal=more_truck]').on('click', function() {
-        $('.overlay, #more_truck').fadeIn('slow');
-     });
-     $('[data-modal=more_train]').on('click', function() {
-        $('.overlay, #more_train').fadeIn('slow');
-     });
-     $('[data-modal=more_plane]').on('click', function() {
-        $('.overlay, #more_plane').fadeIn('slow');
-     });
-    $('.modal_close').on('click', function(){
-        $('.overlay, #consultation, #more, #thanks').fadeOut('slow');
-    });
     
+    $('.modal_close').on('click', function(){
+        $('.overlay, #consultation, #thanks').fadeOut('slow');
+    });
+
+    $('#more_ship').click(function(){
+        $(".pop-up, .price_ship").fadeIn('slow');
+    }); 
+
+    $('#more_train').click(function(){
+        $(".pop-up, .price_train").fadeIn('slow');
+    });
+
+    $('#more_truck').click(function(){
+        $(".pop-up, .price_truck").fadeIn('slow');
+    });
+
+    $('#more_plane').click(function(){
+        $(".pop-up, .price_plane").fadeIn('slow');
+    });
+
+    $('.pop-up_close').on('click', function(){
+        $('.pop-up, .price_ship, .price_train, .price_truck, .price_plane').fadeOut('slow');
+    });
+
+    
+ 
     
     function valideForms(form){
+        
     $(form).validate({
         rules: {
         name: {
@@ -56,22 +68,26 @@ $(document).ready(function() {
         },
         messages: {
         name: {
-            required: "Пожалуйста, введите своё имя",
+            required: "Введите своё имя",
             minlength: jQuery.validator.format("Введите минимум {0} символа!")
         },
         phone: {
-            required: "Пожалуйста, введите свой номер телефона",
+            required: "Введите свой номер телефона",
         },
         email: {
-            required: "Пожалуйста, введите свой email",
-            email: "Ваш email должен быть формата name@domain.com"
-        }
+            required: "Введите свой email",
+            email: "Ваш email должен быть формата name@domain.com",
+        },
+        text: {
+            required: "Введите свое сообщение"
+        },
         }
     });
     };
     
     valideForms('#consultation-form'),
-    valideForms('#consultation form'),   
+    valideForms('#consultation form'),
+    valideForms('#question-form'),   
 
 
     $('input[name=phone]').mask("+38 (999) 999-99-99");
@@ -84,12 +100,14 @@ $(document).ready(function() {
         data: $(this).serialize()
         }).done(function(){
             $(this).find("input").val("");
-            $('#consultation, #more').fadeOut();
+            $('#consultation, #question').fadeOut();
             $('.overlay, #thanks').fadeIn('slow');
             $('form').trigger('reset');
         });
         return false;
     });
+
+    
 
     $(".slider").slick({
         centerMode: true,
@@ -102,8 +120,6 @@ $(document).ready(function() {
             {
               breakpoint: 991,
               settings: {
-                // slidesToShow: 1,
-                // variableWidth: false,
                 arrows: false,
                 dots: true,
                 dotsClass: "dots-castom"

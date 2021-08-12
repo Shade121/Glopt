@@ -85,9 +85,11 @@
         &_divider {
             &_left {
                 width: 292px;
+                height: 343px;
             }
             &_right {
                 width: 292px;
+                height: 343px;
             }
             &-button {
                 &_left {
@@ -98,7 +100,27 @@
                 }
             }
         }
+        .form {
+            margin-top: 6px;
+        }
     }
+    .question {
+        margin-top: 45px;
+        &_block {
+            width: 100%;
+        }
+    }
+    .feed-form {
+        flex-direction: column;
+        align-items: center;
+        textarea {
+            width: 600px;
+        }
+    }
+    .form {
+        margin-top: 6px;
+    }
+    
 }
 
 @media (max-width: 767px) {
@@ -197,28 +219,24 @@
         &_divider {
             &_left {
                 width: 201px;
+                height: 270px;
             }
             &_right {
                 width: 201px;
+                height: 270px;
             }
             &-button {
                 &_left {
                     width: 163px;
+                    height: 135px;
                 }
                 &_right {
                     width: 163px;
+                    height: 135px;
                 }
             }
         }
-        .feed-form {
-            &_row {
-                flex-direction: column;
-                align-items: center;
-                input {
-                    margin-top: 6px;
-                }
-            }
-        }
+        
     }
     .slick {
         &-slide {
@@ -241,8 +259,11 @@
             opacity: 1;
         }
     }
-    
-    
+    .feed-form {
+        textarea {
+            width: 450px;
+        }
+    }
 }
 @media (max-width: 575px) {
     .logo {
@@ -318,21 +339,21 @@
         }
     }
     .feed-form {
-        width: 270px;
         input {
             height: 35px;
         }
+        textarea {
+            width: 268px;
+        }
         &_mt25 {
             width: 250px;
-        }
-        &_row {
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
             input {
-                width: 268px;
+                width: 240px;
+            }
+            .button-submit {
+                width: 180px;
                 height: 45px;
-                margin-top: 6px;
+                font-size: 13px;
             }
         }
     }
@@ -354,16 +375,20 @@
             }
             &_left {
                 width: 85px;
+                height: 220px;
             }
             &_right {
                 width: 85px;
+                height: 220px;
             }
             &-button {
                 &_left {
                     width: 46px;
+                    height: 140px;
                 }
                 &_right {
                     width: 46px;
+                    height: 140px;
                 }
             }
         }
@@ -371,4 +396,3 @@
     }
     
 }
-    

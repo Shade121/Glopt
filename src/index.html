@@ -290,8 +290,9 @@
                             </div>
                             <div class="price-item_text">Морские перевозки грузов из Китая в Россию за 35 дней с прохождением таможни 
                             </div>
-                            <button data-modal="more_ship" class="button price-item_link">Подробнее</button>
+                            <button id="more_ship" class="button price-item_link">Подробнее</button>                            
                         </div>
+                        
                     </div>
                 </div>
                 <div class="col md-3">
@@ -310,8 +311,9 @@
                             <div class="price-item_text">ЖД перевозки грузов из Китая в Россию от 2 недель 
                                 с прохождением таможни 
                             </div>
-                            <button data-modal="more_train" class="button price-item_link">Подробнее</button>
+                            <button id="more_train" class="button price-item_link">Подробнее</button>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="col md-3">
@@ -330,8 +332,9 @@
                             <div class="price-item_text">Автоперевозки грузов из Китая в Россию от 2 недель 
                                 с прохождением таможни
                             </div>
-                            <button data-modal="more_truck" class="button price-item_link">Подробнее</button>
+                            <button id="more_truck" class="button price-item_link">Подробнее</button>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="col md-3">
@@ -350,10 +353,12 @@
                             <div class="price-item_text">Авиаперевозки грузов из Китая в Россию до 2 недель 
                                 с прохождением таможни
                             </div>
-                            <button data-modal="more_plane" class="button price-item_link">Подробнее</button>
+                            <button id="more_plane" class="button price-item_link">Подробнее</button>
                         </div>
+                        
                     </div>
                 </div>
+                
            </div>
        </div> 
     </section>
@@ -370,16 +375,21 @@
                 <div class="consultation_divider_right"></div>
             </div>
             
-            <div class="consultation_block">
-                <form id="consultation-form" class="feed-form  feed-form_row" action="#">
+            <form id="consultation-form" class="feed-form  feed-form_row" action="#">
+                <div class="form">
                     <input name="name" required placeholder="Ваше имя" type="text">
+                </div>
+                <div class="form">
                     <input name="phone" required placeholder="Ваш телефон" type="tel">
+                </div>
+                <div class="form">
                     <input name="email" required placeholder="Ваш E-mail" type="email">
-                </form>
-            </div>
+                </div>
+                <div class="break"></div>
+                <button class="button button-submit_md">Отправить заявку</button>
+            </form>
             <div class="consultation_divider consultation_divider-button">
                 <div class="consultation_divider consultation_divider-button_left"></div>
-                <button class="button button_md">Отправить заявку</button>
                 <div class="consultation_divider consultation_divider-button_right"></div>
             </div>
             
@@ -560,6 +570,37 @@
             
         </div>
     </div>
+
+    <section class="question">
+        <div class="container">
+            <div class="question_block">
+                <div class="question_header">
+                    <h2>Остались вопросы?</h2>
+                    <h3>Напишите нам!</h3>
+                </div>
+                <div class="question_body">
+                    <form id="question-form" class="feed-form  feed-form_question" action="#">
+                        <div class="form">
+                            <input name="name" required placeholder="Ваше имя" type="text">
+                        </div>
+                        <div class="form">
+                            <input name="phone" required placeholder="Ваш телефон" type="tel">
+                        </div>
+                        <div class="form">
+                            <input name="email" required placeholder="Ваш E-mail" type="email">
+                        </div>
+                        <div class="form">
+                            <textarea name="text" id="question_text" form="question-form"  maxlength="300" placeholder="Сообщение..." required></textarea>
+                        </div>
+                        <button class="button button-submit_md">Отправить заявку</button>
+                    </form>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
     
 
     <div class="overlay">
@@ -571,52 +612,56 @@
                 <input name="name" placeholder="Ваше имя" type="text">
                 <input name="phone" placeholder="Ваш телефон" type="tel">
                 <input name="email" placeholder="Ваш E-mail" type="email">
-            </form>
-            <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
-        </div>
 
-        <div class="modal modal_price" id="more_ship">
-            <div class="modal_close">&times;</div>
-            <div class="modal_more">
-                Ship Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-            </div>
+                <button class="button button-submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
         </div>
-        <div class="modal modal_price" id="more_train">
-            <div class="modal_close">&times;</div>
-            <div class="modal_more">
-                Train Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-            </div>
-        </div>
-        <div class="modal modal_price" id="more_truck">
-            <div class="modal_close">&times;</div>
-            <div class="modal_more">
-                Truck Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-            </div>
-        </div>
-        <div class="modal modal_price" id="more_plane">
-            <div class="modal_close">&times;</div>
-            <div class="modal_more">
-                Plane Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
-            </div>
-        </div>
+        
 
         <div class="modal modal_mini" id="thanks">
             <div class="modal_close">&times;</div>
             <div class="modal_subtitle">Спасибо за вашу заявку!</div>
             <div class="modal_descr">Наш менеджер свяжется с вами 
                 в ближайшее время!</div>
+        </div>
+    </div>
+
+    <div class="pop-up">
+        <div class="price_ship" >
+            <div class="pop-up_close">&times;</div>
+            <div class="more_ship">
+                Ship Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+            </div>
+        </div>
+        <div class="price_train">
+            <div class="pop-up_close">&times;</div>
+            <div class="more_train">
+                Train Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+            </div>
+        </div>
+        <div class="price_truck">
+            <div class="pop-up_close">&times;</div>
+            <div class="more_truck">
+                Truck Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+            </div>
+        </div>
+        <div class="price_plane">
+            <div class="pop-up_close">&times;</div>
+            <div class="more_plane">
+                Plane Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui incidunt, neque eveniet perferendis sapiente delectus tenetur harum dicta praesentium asperiores fugit suscipit. Quaerat repellendus modi, ea obcaecati temporibus ipsa?
+            </div>
         </div>
     </div>
 
