@@ -41,6 +41,11 @@
             }
         }
     }
+    .footer {
+        &_wrapper {
+            margin-left: 64px;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -119,6 +124,34 @@
     }
     .form {
         margin-top: 6px;
+    }
+    .footer {
+        &_info {
+            justify-content: space-between;
+            h2 {
+                font-size: 13px;
+                margin-left: 0;
+            }
+        }
+        &_phone {
+            font-size: 14px;
+        }
+        &_wrapper {
+            margin-left: 0;
+        }
+        .button {
+            display: none;
+            &_xs {
+                display: block;
+            }
+        }
+        &_block {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        &_question {
+            display: none;
+        }
     }
     
 }
@@ -264,6 +297,13 @@
             width: 450px;
         }
     }
+    .footer {
+        &_info {
+            h2 {
+                text-align: center;
+            }
+        }
+    }
 }
 @media (max-width: 575px) {
     .logo {
@@ -338,6 +378,14 @@
             width: auto;
         }
     }
+    .price {
+        &_ship, &_train, &_truck, &_plane {
+            width: 280px;
+            height: 400px;
+            padding: 38px 20px 40px 20px;
+            overflow: auto;
+        }
+    }
     .feed-form {
         input {
             height: 35px;
@@ -358,7 +406,7 @@
         }
     }
     .modal {
-        width: 300px;
+        width: 290px;
         min-height: 320px;
         padding: 27px 22px 27px 22px;
     }
@@ -393,6 +441,20 @@
             }
         }
         
+    }
+    .map {
+        &_info {
+            width: 242px;
+            transform: translateX(-51%);
+        }
+    }
+    .footer {
+        h2 {
+            display: none;
+        }
+        &_bottom  {
+            flex-wrap: wrap;
+        }
     }
     
 }

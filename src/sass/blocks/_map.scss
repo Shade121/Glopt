@@ -1,0 +1,45 @@
+.map {
+    position: relative;
+    #map {
+        width: 100%;
+        height: 500px;
+    }
+    &_info {
+        position: absolute;
+        width: 299px;
+        height: 158px;
+        top: 141px;
+        left: 50%;
+        transform: translateX(-35%);
+        background-color: #fff;
+        padding: 27px 28px;
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: left;
+        color: #3d3d3d;
+        .city {
+            font-size: 16px;
+            font-weight: bold;
+            color: $main-color;
+        }
+        a {
+            color: $main-color;
+        }
+        &:after {
+            content: ''; 
+            position: absolute;
+            left: -39px;
+            bottom: 50%;
+            transform: translateY(50%);
+            border: 20px solid transparent; 
+            border-right: 20px solid #fff;
+        }
+    }
+    address {
+        margin: 0;
+    }
+}

@@ -14,18 +14,18 @@
             <div class="row">
                 <header class="header">
                         <div class="col ">
-                            <a href="#" class="logo"><img src="icons/logo.png" alt="logo">
-                        </div>
+                            <a href="#" class="logo"><img src="icons/logo.png" alt="logo"></a>
+                            </div>
                         
                         <div class="col col-md-10 col-lg-7 col-xl-7">
                             <nav class="navbar">
                                 <ul class="menu">
-                                    <li class="menu_item"><a href="#" class="menu_link">Преимущества</a></li>
-                                    <li class="menu_item"><a href="#" class="menu_link">Наша работа</a></li>
-                                    <li class="menu_item"><a href="#" class="menu_link">Цены</a></li>
-                                    <li class="menu_item"><a href="#" class="menu_link">Схема работы</a></li>
-                                    <li class="menu_item"><a href="#" class="menu_link">Отзывы</a></li>
-                                    <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
+                                    <li class="menu_item"><a href="#advantages" class="menu_link">Преимущества</a></li>
+                                    <li class="menu_item"><a href="#work" class="menu_link">Наша работа</a></li>
+                                    <li class="menu_item"><a href="#price" class="menu_link">Цены</a></li>
+                                    <li class="menu_item"><a href="#schema" class="menu_link">Схема работы</a></li>
+                                    <li class="menu_item"><a href="#carousel" class="menu_link">Отзывы</a></li>
+                                    <li class="menu_item"><a href="#map" class="menu_link">Контакты</a></li>
                                 </ul>
                                 <div class="hamburger">
                                     <span></span>
@@ -38,8 +38,8 @@
                         <div class="hidden col-sm-3 col-md-4">
                             <div class="header_block">
                                 <div class="header_wrapper">
-                                    <div class="header_wrapper header_question">Есть вопросы?</div>
-                                    <a href="tel:+79264230100" class="header_wrapper header_phone">+7 (926) 423 01 00</a>
+                                    <div class="header_question">Есть вопросы?</div>
+                                    <a href="tel:+79264230100" class="header_phone">+7 (926) 423 01 00</a>
                                 </div>
                                 <button data-modal="consultation" class="button">Перезвоните мне</button>
                                 <button data-modal="consultation" class="button button_xs">Перезвоните мне</button>
@@ -88,7 +88,7 @@
         </div>
         <button data-modal="consultation" class="button button_xl">Получить расчет</button>
     </section>
-    <section class="advantages">
+    <section id="advantages" class="advantages">
         <div class="container">
             <h2 class="title">Преимущества работы с GlobalOpt</h2>
             <div class="row">
@@ -199,7 +199,7 @@
             </div>
         </div>
     </section>
-    <section class="work">
+    <section id="work" class="work">
         <div class="container">
             <h2 class="title">Наша работа - больше чем просто доставка</h2>
             <div class="divider"></div>
@@ -265,7 +265,7 @@
             </div>
         </div>
     </section>
-    <section class="price">
+    <section id="price" class="price">
        <div class="container">
            <h2 class="title">Цены на любой вариант доставки</h2>
            <div class="divider"></div>
@@ -410,7 +410,7 @@
             </div>
         </div>
     </section>
-    <section class="schema">
+    <section id="schema" class="schema">
         <div class="container">
             <h2 class="title">Схема работы с нами</h2>
             <div class="row">
@@ -508,7 +508,7 @@
             </div>
         </div>
     </section>
-    <div class="carousel">
+    <div id="carousel"class="carousel">
         <h2 class="title">отзывы наших клиентов</h2>
         <div class="divider"></div>
         <h2 class="subtitle">Мы всегда стараемся помочь клиентам, чтобы они обращались к нам снова</h2>
@@ -597,10 +597,45 @@
                     
                 </div>
             </div>
-            
-            
         </div>
     </section>
+    <section class="map">
+        <div id="map"></div>
+        <div class="map_info">
+            <address><span class="city">г. Москва</span><br>
+                ул. Садовническая, дом 5, офис 4-6 <br>
+                700 от м. Новокузнецкая<br>
+            </address>
+            Тел: +7 (926) 423 01 00<br>
+            <a href="mailto:info@glopt.ru">info@glopt.ru</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_info">
+                <a href="#" class="footer_logo"><img src="icons/logo.png" alt="logo"></a>
+                <h2>Global Opt - Доставка грузов из Китая в Россию и СНГ</h2>
+                <div class="footer_block">
+                    <div class="footer_wrapper">
+                        <div class="footer_question">Есть вопросы?</div>
+                        <a href="tel:+79264230100" class="footer_phone">+7 (926) 423 01 00</a>
+                    </div>
+                    <button data-modal="consultation" class="button">Перезвоните мне</button>
+                    <button data-modal="consultation" class="button button_xs">Перезвоните мне</button>
+                </div>
+                </div>
+            <div class="footer_divider"></div>
+            <div class="footer_bottom">
+                <h2>© 2010 Scratch.com.ua</h2>
+                <a href="#" class="footer_confidentiality">Политика конфидециальности</a>
+                <div class="footer_creator">
+                    <div class="footer_descr">Создание сайта:</div>
+                    <img src="icons/logo_scratch.svg" alt="" class="footer_image">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
     
 
     <div class="overlay">
@@ -676,6 +711,7 @@
         <script src="js/jquery.validate.min.js"></script> 
         <script src="js/jquery.maskedinput.min.js"></script>
         <script src="js/wow.min.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=8d18d1c0-bfb5-4925-9928-960d70c2d569" type="text/javascript"></script>
         <script src="js/script.js"></script>
 </body>
 </html>
