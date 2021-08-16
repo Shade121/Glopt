@@ -125,6 +125,11 @@
     .form {
         margin-top: 6px;
     }
+    .map {
+        &_info {
+            left: 58%;
+        }
+    }
     .footer {
         &_info {
             justify-content: space-between;
@@ -297,6 +302,15 @@
             width: 450px;
         }
     }
+    .map {
+        &_info {
+            left: 30%;
+            transform: translateY(-78%);
+            &:after {
+                display: none;
+            }
+        }
+    }
     .footer {
         &_info {
             h2 {
@@ -445,7 +459,8 @@
     .map {
         &_info {
             width: 242px;
-            transform: translateX(-51%);
+            left: 12%;
+            transform: translateY(-78%);
         }
     }
     .footer {

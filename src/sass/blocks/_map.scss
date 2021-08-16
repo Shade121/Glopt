@@ -8,10 +8,9 @@
         position: absolute;
         width: 299px;
         height: 158px;
-        top: 141px;
-        left: 50%;
-        transform: translateX(-35%);
-        background-color: #fff;
+        top: 178px;
+        left: 55%;
+        background-color: rgb(233, 232, 232);
         padding: 27px 28px;
         font-size: 14px;
         font-weight: 300;
@@ -36,7 +35,7 @@
             bottom: 50%;
             transform: translateY(50%);
             border: 20px solid transparent; 
-            border-right: 20px solid #fff;
+            border-right: 20px solid rgb(233, 232, 232);
         }
     }
     address {

@@ -173,65 +173,35 @@ $(document).ready(function() {
     });
   
     new WOW().init();
-
-    ymaps.ready(function () {
-        var myMap = new ymaps.Map('map', {
-                center: [55.7480, 37.6291],
-                zoom: 17,
-                controls: []
-            }, {
-                searchControlProvider: 'yandex#search'
-            }),
     
-            // Создаём макет содержимого.
-            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-            ),
-    
-            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                hintContent: '',
-                balloonContent: ''
-            }, 
-            {
-                // Опции.
-                // Необходимо указать данный тип макета.
-                iconLayout: '',
-                // Своё изображение иконки метки.
-                iconImageHref: '',
-                // Размеры метки.
-                iconImageSize: [63, 63],
-                // Смещение левого верхнего угла иконки относительно
-                // её "ножки" (точки привязки).
-                iconImageOffset: [-50, -38]
-            }),
-    
-            myPlacemarkWithContent = new ymaps.Placemark([55.7482, 37.6272], {
-                hintContent: '',
-                balloonContent: '',
-                iconContent: ''
-            }, {
-                // Опции.
-                // Необходимо указать данный тип макета.
-                iconLayout: 'default#imageWithContent',
-                // Своё изображение иконки метки.
-                iconImageHref: 'icons/map.png',
-                // Размеры метки.
-                iconImageSize: [63, 63],
-                // Смещение левого верхнего угла иконки относительно
-                // её "ножки" (точки привязки).
-                iconImageOffset: [-24, -24],
-                // Смещение слоя с содержимым относительно слоя с картинкой.
-                iconContentOffset: [15, 15],
-                // Макет содержимого.
-                iconContentLayout: MyIconContentLayout
-            });
-    
-        myMap.geoObjects
-            .add(myPlacemark)
-            .add(myPlacemarkWithContent);
-        myMap.behaviors.disable('scrollZoom');
-        
+    const latlng = new google.maps.LatLng("55.7482", "37.6272");
+    const myOptions = {
+    zoom: 17,
+    center: latlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    const map = new google.maps.Map(document.getElementById("map"),myOptions);
+    map.setOptions({ 
+        mapTypeControl: false,
+        draggable: false,
+        scaleControl: false,
+        scrollwheel: false,
+        navigationControl: false,
+        streetViewControl: false,
     });
+    
+    const marker = new google.maps.Marker({
+        position: {lat: 55.7479, lng: 37.62725},
+        map: map,
+        title: 'Global Opt г. Москва, ул. Садовническая, дом 5, офис 4-6, 700 от м. Новокузнецкая Тел: +7 (926) 423 01 00',
+        icon: {
+            url: "icons/map.png",
+            scaledSize: new google.maps.Size(63, 63)
+	}
+    });
+
+    
+    
 })
 
 
