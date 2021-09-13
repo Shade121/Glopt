@@ -13,8 +13,8 @@ $(document).ready(function() {
             item.addEventListener('click', () => {
                 hamburger.classList.toggle('hamburger_active');
                 menu.classList.toggle('menu_active');
-            })
-        })
+            });
+        });
     }); 
 
     // Modal
@@ -51,39 +51,39 @@ $(document).ready(function() {
  
     
     function valideForms(form){
-        
-    $(form).validate({
-        rules: {
-        name: {
-            required: true,
-            minlength: 2
-        },       
-        phone: {
-            required: true
-        },            
-        email: {
-            required: true,
-            email:true
-        }
-        },
-        messages: {
-        name: {
-            required: "Введите своё имя",
-            minlength: jQuery.validator.format("Введите минимум {0} символа!")
-        },
-        phone: {
-            required: "Введите свой номер телефона",
-        },
-        email: {
-            required: "Введите свой email",
-            email: "Ваш email должен быть формата name@domain.com",
-        },
-        text: {
-            required: "Введите свое сообщение"
-        },
-        }
-    });
-    };
+            
+        $(form).validate({
+            rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },       
+            phone: {
+                required: true
+            },            
+            email: {
+                required: true,
+                email:true
+            }
+            },
+            messages: {
+            name: {
+                required: "Введите своё имя",
+                minlength: jQuery.validator.format("Введите минимум {0} символа!")
+            },
+            phone: {
+                required: "Введите свой номер телефона",
+            },
+            email: {
+                required: "Введите свой email",
+                email: "Ваш email должен быть формата name@domain.com",
+            },
+            text: {
+                required: "Введите свое сообщение"
+            },
+            }
+        });
+    }
     
     valideForms('#consultation-form'),
     valideForms('#consultation form'),
@@ -202,6 +202,6 @@ $(document).ready(function() {
 
     
     
-})
+});
 
 
