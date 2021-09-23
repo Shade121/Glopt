@@ -112,7 +112,7 @@ $(document).ready(function() {
         slidesToShow: 3,
         initialSlide: 1,
         variableWidth: true,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/prev.png"></img></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/prev.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/next.png"></button>',
         responsive: [
             {
